@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="center_horizontal"
+            android:text="회원정보"
+            android:textColor="@color/colorMBTI"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:allowUndo="true"
+            android:background="#FFFFFF"
+            android:gravity="center_horizontal"
+            android:text="사진 한 장을 골라주세요!"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/user_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:maxWidth="150dp"
+                android:maxHeight="150dp"
+                android:onClick="onClick" />
+
+            <Button
+                android:id="@+id/btn_UploadPicture"
+                android:layout_width="130dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@color/colorMBTI"
+                android:onClick="onClick"
+                android:text="사진 선택"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextViewName"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="5sp"
+            android:text="이름(닉네임)"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/EditTextName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="이름을 입력하시오."
+            android:inputType="textPersonName|textCapSentences" />
+
+        <TextView
+            android:id="@+id/Gender"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="성별(남/여)"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/EditTextGender"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="성별을 입력하시오." />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="MBTI 유형"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/EditTextMbti"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="당신의 MBTI 유형을 입력하시오." />
+
+        <TextView
+            android:id="@+id/addressTextView"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="주소"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/EditTextaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="주소를 입력하시오." />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSaveButton"
+            android:layout_width="285dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="회원 정보 수정하기"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#121111" />
+    </LinearLayout>
+</LinearLayout>
